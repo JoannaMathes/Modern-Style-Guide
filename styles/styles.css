@@ -112,3 +112,21 @@ header > hr {
         margin-top: -50px;
     }
 } 
+/* Fonts Section */
+.fonts-section > h4 {
+    color: lime;
+    border: 3px dotted crimson;
+}
+.font-gallery {
+    width: 70%;
+    display: grid;
+    color: blue;
+}
+.font-card {
+    max-width: 25%;
+}
+.font-card > .lato {
+    justify-self: flex-end;
+    color: red;
+}
+/* Font Classes */
