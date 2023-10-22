@@ -1,0 +1,114 @@
+/* Base Styles */
+* {
+    font-family: roboto;
+    color: #554348;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body {
+    background: rgb(255,255,255);
+    background: radial-gradient(180deg, rgba(255,255,255,1) 0%, rgba(212,245,245,1) 100%); 
+}
+h1 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+h2 {
+    font-size: 2.10rem;
+    font-weight: 300;
+}
+p {
+    font-size: 
+}
+section {
+    border: 2px solid #554348;
+    margin: 20px;
+    border-radius: 20px;
+}
+/* Grouped Styles */ 
+.colors-section > h2, .fonts-section > h2, .text-styles-section > h2 {
+    padding-left: 3em;
+}
+@media only screen and (max-width: 750px) {
+    .colors-section > h2, .fonts-section > h2, .text-styles-section > h2 {
+        padding: 5px;
+        text-align: center;
+    }
+}
+/* Header Styles */
+header {
+    margin: -10px;
+    padding: 4em;
+    text-align: center;
+    text-shadow: #D4F5F5 3px 0 5px;
+}
+header p {
+    font-weight: 300;
+    font-style: italic;
+    line-height: 2em;
+}
+header > hr {
+    width: 50%;
+}
+/* Color Swatches Section */
+.swatches-gallery {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: minmax(min-content, auto);
+    grid-gap: 1rem;
+    justify-content: end;
+    padding-bottom: 2rem;
+}
+.color-swatch {
+    padding: 0.65rem;
+    border-radius: 5%;
+    min-width: 14.375rem;
+}
+.color-swatch > p {
+    font-size: 0.90em;
+}
+.color-name {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 18px;
+}
+/* Color Section */
+.light-blue {
+    background-color: #93B7BE;
+}
+.rose-ebony {
+    background-color: #554348;
+}
+.light-cyan {
+    background-color: #D4f5f5;
+}
+.cadet-gray {
+    background-color: #8C9A9E;
+}
+.gray {
+    background-color: #747578;
+}
+.color-swatch:not(.light-cyan) > h3, .color-swatch:not(.light-cyan) > p {
+    color: white;
+}
+@media only screen and (max-width: 750px) {
+    .swatches-gallery {
+        width: max-content;
+    }
+    .color-swatch {
+        width: 100%;
+        padding: 40px;
+    }
+    .color-swatch > h3 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 5px;
+        text-align: center;
+    }
+    .colors-section {
+        margin-top: -50px;
+    }
+} 
