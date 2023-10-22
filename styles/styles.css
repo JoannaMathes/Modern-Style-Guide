@@ -18,11 +18,11 @@ h2 {
     font-weight: 300;
 }
 p {
-    font-size: 
+    font-size: 16px;
 }
 section {
     border: 2px solid #554348;
-    margin: 20px;
+    margin: 40px 20px;
     border-radius: 20px;
 }
 /* Grouped Styles */ 
@@ -113,20 +113,55 @@ header > hr {
     }
 } 
 /* Fonts Section */
-.fonts-section > h4 {
-    color: lime;
-    border: 3px dotted crimson;
-}
 .font-gallery {
-    width: 70%;
     display: grid;
-    color: blue;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    margin-top: -20px;
 }
-.font-card {
-    max-width: 25%;
+.font-card{
+    padding: 1rem;
+    margin: 1.5rem;
+    background-color: #F4F5F6;
+    border: 0.03125rem solid #8C9A9E;
+    border-radius: 8px;
+    line-height: 1.5;
 }
-.font-card > .lato {
-    justify-self: flex-end;
-    color: red;
+.font-card > h4 {
+    text-decoration: underline;
 }
 /* Font Classes */
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: 700;
+}
+.lato > h4, .lato p {
+    font-family: "Lato", serif;
+}
+.montserrat > h4, .montserrat > p {
+    font-family: "Montserrat";
+}
+/* Text Styles */
+.styles-gallery {
+   margin: 50px; 
+}
+.style-card {
+    padding-left: 50px;
+}
+.style-card > h1 {
+    margin-bottom: 5px;;
+} 
+.style-card > h2 {
+    font-weight: 300;
+    font-size: 2rem;
+}
+.style-card > p {
+   margin-top: 30px;
+   font-weight: 300;
+}
+.style-card ul {
+   line-height: 1.3;
+   list-style-type: square;
+}
